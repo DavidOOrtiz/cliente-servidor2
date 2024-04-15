@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Schedule</title>
+        <title>Agenda tu cita de ortodoncia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; 
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #003366; 
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #ffffff; 
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #003366; 
+            color: #ffffff; 
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #001f4d; 
+        }
+
+        
+    </style>
+    </head>
+    <body>
+        <h1>Agenta Tu cita de dientes</h1>
+        <form action="schedule.php" method="post">
+            Fecha Cita <input type="date" name="fechaCita" />
+        
+            <hr/>
+            
+            Tipo de Cita
+            <select name="tipoCita">
+                <option value="LIMD">Limpieza Dental</option>
+                <option value="ORT">Ortodoncia</option>
+                <option value="CARI">Caries</option>
+                <option value="DIS">Diseño de Sonrisa</option>
+                <option value="BLA">Blanqueamiento Dental</option>
+
+            </select>
+            Hora Cita
+            <select name="horaCita">
+                <option value="08:00">08:00 a.m</option>
+                <option value="09:00">09:00 a.m</option>
+                <option value="10:00">10:00 a.m</option>
+                <option value="11:00">11:00 a.m</option>
+                <option value="02:00">02:00 p.m</option>
+                <option value="03:00">03:00 p.m</option>
+                <option value="04:00">04:00 p.m</option>
+            </select>
+
+            <input type="submit" value="Guardar">
+    </body>
+</html>
